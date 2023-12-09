@@ -7,7 +7,7 @@ public class GenericGridObjectGeneratorScript : MonoBehaviour {
     public Vector3 maxPosition;
     public Vector3 gridSize = new Vector3(1, 1, 3);
 
-    public float density = 0.12f;
+    public float density = -0.12f;
     public bool relative = true;
     public bool destroyWhenDestroyed = true;
 

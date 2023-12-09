@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using System.Dynamic;
 
 public class LevelControllerScript : MonoBehaviour {
     public int minZ = 3;
@@ -12,17 +11,13 @@ public class LevelControllerScript : MonoBehaviour {
     public GameObject coins;
 
     private Dictionary<int, GameObject> lines;
-    AudioSource a;
-    private GameObject player;
 
-    private MusicControl _musicControler;
+    private GameObject player;
 
     public void Start() {
         player = GameObject.FindGameObjectWithTag("Player");
         lines = new Dictionary<int, GameObject>();
-        _musicControler = MusicControl.Instance();
-        _musicControler.PlayBackgroundSound();
-    }
+	}
 	
     public void Update() {
         // Generate lines based on player position.
